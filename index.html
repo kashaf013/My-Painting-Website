@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zahra's Art Studio | Original Paintings</title>
+
+    <meta
+        name="description"
+        content="Explore original paintings and artwork by Syeda Kashaf Zahra."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                Zahra's Art Studio
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#paintings">Gallery</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <header id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                ORIGINAL • HANDMADE • PERSONAL
+            </p>
+
+            <h1>
+                Art That Speaks Without Words
+            </h1>
+
+            <p class="hero-subtitle">
+                Welcome to Zahra's Art Studio — a collection of
+                original paintings created with creativity,
+                emotion and passion.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button id="viewPaintings">
+                    Explore My Collection
+                </button>
+
+                <a href="#about" class="hero-contact">
+                    Meet the Artist
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <main id="paintings" class="gallery-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                MY ARTWORK
+            </p>
+
+            <h2>
+                Featured Collection
+            </h2>
+
+            <p class="section-description">
+                A selection of original paintings created from
+                imagination, practice and personal expression.
+            </p>
+
+        </div>
+
+
+        <!-- Filters -->
+
+        <div class="filters">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search paintings..."
+            >
+
+            <select id="mediumFilter">
+
+                <option value="all">
+                    All Mediums
+                </option>
+
+                <option value="Acrylic">
+                    Acrylic
+                </option>
+
+                <option value="Watercolor">
+                    Watercolor
+                </option>
+
+                <option value="Oil Painting">
+                    Oil Painting
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ================= GALLERY CARDS ================= -->
+
+        <div class="gallery">
+
+
+            <!-- Painting 1 -->
+
+            <div
+                class="painting-card"
+                data-medium="Acrylic"
+            >
+
+                <div class="image-container">
+
+                    <img
+                        src="https://i.ytimg.com/vi/xUw0228OnKA/maxresdefault.jpg"
+                        alt="My First Painting"
+                    >
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <p class="card-medium">
+                        Acrylic
+                    </p>
+
+                    <h3>
+                        Forest
+                    </h3>
+
+                    <p class="price">
+                        Rs. 5,000
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-title="My First Painting"
+                        data-image="https://i.ytimg.com/vi/xUw0228OnKA/maxresdefault.jpg"
+                        data-medium="Acrylic"
+                        data-price="Rs. 5,000"
+                        data-description="An original acrylic painting created with creativity and personal expression."
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Painting 2 -->
+
+            <div
+                class="painting-card"
+                data-medium="Watercolor"
+            >
+
+                <div class="image-container">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-VioqYMztD1qWwZwuaFxSDljRtRhBuLCnkiHseitnoFwGHP0e-mTcI8&s=10"
+                        alt="My Second Painting"
+                    >
+
+                    <span class="status sold">
+                        Sold
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <p class="card-medium">
+                        Watercolor
+                    </p>
+
+                    <h3>
+                        Glass Jar
+                    </h3>
+
+                    <p class="price">
+                        Rs. 4,000
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-title="My Second Painting"
+                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-VioqYMztD1qWwZwuaFxSDljRtRhBuLCnkiHseitnoFwGHP0e-mTcI8&s=10"
+                        data-medium="Watercolor"
+                        data-price="Rs. 4,000"
+                        data-description="A handmade watercolor painting from my collection."
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Painting 3 -->
+
+            <div
+                class="painting-card"
+                data-medium="Oil Painting"
+            >
+
+                <div class="image-container">
+
+                    <img
+                        src="https://i.ytimg.com/vi/19KevHpRLYw/hqdefault.jpg"
+                        alt="My Third Painting"
+                    >
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <p class="card-medium">
+                        Oil Painting
+                    </p>
+
+                    <h3>
+                        Mountain View
+                    </h3>
+
+                    <p class="price">
+                        Rs. 7,000
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-title="My Third Painting"
+                        data-image="https://i.ytimg.com/vi/19KevHpRLYw/hqdefault.jpg"
+                        data-medium="Oil Painting"
+                        data-price="Rs. 7,000"
+                        data-description="An original oil painting created with care and creativity."
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Painting 4 -->
+
+            <div
+                class="painting-card"
+                data-medium="Acrylic"
+            >
+
+                <div class="image-container">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKjQSQw7GdEN0ge0pqcu_YLXeJjK_IP9xkXw0ZTB1ANQBYRlnT1gm82m0&s=10"
+                        alt="Painting Four"
+                    >
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <p class="card-medium">
+                        Acrylic
+                    </p>
+
+                    <h3>
+                        Moonlight painting
+                    </h3>
+
+                    <p class="price">
+                        Rs. 6,000
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-title="Painting Four"
+                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKjQSQw7GdEN0ge0pqcu_YLXeJjK_IP9xkXw0ZTB1ANQBYRlnT1gm82m0&s=10"
+                        data-medium="Acrylic"
+                        data-price="Rs. 6,000"
+                        data-description="An original acrylic artwork from my personal collection."
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Painting 5 -->
+
+            <div
+                class="painting-card"
+                data-medium="Watercolor"
+            >
+
+                <div class="image-container">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybtj9n1AfGcH7_K1dpv-Yc2MCXC8ROi1Qn98vAtjOmo1EHWkJmLvaGBGe&s=10"
+                        alt="Painting Five"
+                    >
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <p class="card-medium">
+                        Watercolor
+                    </p>
+
+                    <h3>
+                        Joker(character painting)
+                    </h3>
+
+                    <p class="price">
+                        Rs. 4,500
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-title="Painting Five"
+                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybtj9n1AfGcH7_K1dpv-Yc2MCXC8ROi1Qn98vAtjOmo1EHWkJmLvaGBGe&s=10"
+                        data-medium="Watercolor"
+                        data-price="Rs. 4,500"
+                        data-description="A beautiful original watercolor artwork from my collection."
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Painting 6 -->
+
+            <div
+                class="painting-card"
+                data-medium="Oil Painting"
+            >
+
+                <div class="image-container">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9l7p-7vV1CXWECINvPeruwUzkfcUqfnB3Mtz6Gg8N7Jg7fDCdOIiZlo&s=10"
+                        alt="Painting Six"
+                    >
+
+                    <span class="status sold">
+                        Sold
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <p class="card-medium">
+                        Oil Painting
+                    </p>
+
+                    <h3>
+                        Joker Painting(IFYKYK)
+                    </h3>
+
+                    <p class="price">
+                        Rs. 8,000
+                    </p>
+
+                    <button
+                        class="details-btn"
+                        data-title="Painting Six"
+                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9l7p-7vV1CXWECINvPeruwUzkfcUqfnB3Mtz6Gg8N7Jg7fDCdOIiZlo&s=10"
+                        data-medium="Oil Painting"
+                        data-price="Rs. 8,000"
+                        data-description="An original oil painting from my personal collection."
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <p class="section-label">
+                ABOUT THE ARTIST
+            </p>
+
+            <h2>
+                My Story
+            </h2>
+
+            <p>
+                Hi, I'm Syeda Kashaf Zahra, a self-taught artist
+                driven by passion and pure intuition.
+            </p>
+
+            <p>
+                My artistic journey started long before I ever
+                touched a canvas, beginning with painting the
+                walls of my home, crafting, and designing
+                handmade posters. Over time, that creative
+                energy naturally evolved into a dedicated love
+                for painting.
+            </p>
+
+            <p>
+                Without any formal training, every piece I create
+                is shaped by practice, personal vision, and
+                genuine emotion. For me, art is a way of
+                capturing thoughts and feelings that words
+                cannot quite express.
+            </p>
+
+            <p class="about-thanks">
+                Thank you for visiting my gallery.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-content">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Let's Talk About Art
+            </h2>
+
+            <p class="contact-intro">
+                Have a question about one of my paintings?
+                Send me a message and I'll get back to you.
+            </p>
+
+            <form id="contactForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                </div>
+
+                <textarea
+                    id="message"
+                    placeholder="Write your message..."
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Zahra's Art Studio
+                </h3>
+
+                <p>
+                    Original artwork created with passion,
+                    imagination and personal expression.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#paintings">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Zahra's Art Studio.
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= PAINTING MODAL ================= -->
+
+    <div
+        id="paintingModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <span
+                id="closeModal"
+                aria-label="Close"
+            >
+                &times;
+            </span>
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Selected painting"
+            >
+
+            <p class="card-medium">
+                ARTWORK DETAILS
+            </p>
+
+            <h2 id="modalTitle"></h2>
+
+            <p>
+                <strong>Medium:</strong>
+                <span id="modalMedium"></span>
+            </p>
+
+            <p>
+                <strong>Price:</strong>
+                <span id="modalPrice"></span>
+            </p>
+
+            <p id="modalDescription"></p>
+
+            <a
+                id="orderButton"
+                class="email-button"
+                href="#"
+            >
+                Inquire About This Painting
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
